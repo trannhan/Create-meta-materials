@@ -1,0 +1,3 @@
+mpiCC -o scat.o -c -Wall -Wwrite-strings -Wno-strict-aliasing -Wno-unknown-pragmas -O -I/homes/nhantran/local/src/petsc-3.3-p6/include -I/homes/nhantran/local/src/petsc-3.3-p6/arch-linux2-c-opt/include -D__INSDIR__= scat.c
+mpiCC -Wall -Wwrite-strings -Wno-strict-aliasing -Wno-unknown-pragmas -O  -o scat scat.o  -L/homes/nhantran/local/src/petsc-3.3-p6/arch-linux2-c-opt/lib  -lpetsc -lX11 -lpthread -Wl,-rpath,/homes/nhantran/local/src/petsc-3.3-p6/arch-linux2-c-opt/lib -lflapack -lfblas -lmpi_f90 -lmpi_f77 -lgfortran -lm -lgfortran -lm -lgfortran -lm -lm -lquadmath -lm -ldl -lmpi -lopen-rte -lopen-pal -lnsl -lutil -lgcc_s -lpthread -ldl
+/bin/rm -f scat.o

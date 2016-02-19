@@ -1,0 +1,103 @@
+>> CompareSolution3D(1e-3,5e-2,1000,125);
+SCALAR WAVE SCATTERING PROBLEM
+
+INPUT
+
+Speed of wave, c:								 3.440000e+04
+Frequency, f:									 1.000000e+03
+Wave number, k = 2pi/lambda:					 1.826507e-01
+Kappa is in [0,1):								 0.990000
+Volume of the domain that contains all particles:1.000000
+Radius of one particle, a:						 1.000000e-03
+Distance between two particles, d:				 5.000000e-02
+Number of particles, M:							 1000
+Number of sub-cubes in the unit cube, P:		 125
+Direction of plane wave, alpha:					 (1  0  0)
+Continuous distribution function of particles:	 0.93325
+Desired refraction coefficient:					 -1+0.001i
+Original refraction coefficient:				 1
+Boundary impedance of the particles:			 2.6548e-06+0.0053096i
+Potential function, p(x):						 3.3361e-08+6.6723e-05i
+Impedance related function, h(x):				 2.8447e-09+5.6894e-06i
+
+Computing...
+
+Solving the reduced system P:
+
+conditionA =
+
+    1.0000
+
+
+normA =
+
+    1.0000
+
+gmres converged at iteration 1 to a solution with relative residual 1.2e-06.
+Elapsed time is 1.738227 seconds.
+
+Solving the original system S:
+
+conditionA =
+
+    1.0000
+
+
+normA =
+
+    1.0000
+
+
+===============================================================================================
+
+>> CompareSolution3D(1e-4,5e-2,10000,125);
+SCALAR WAVE SCATTERING PROBLEM
+
+INPUT
+
+Speed of wave, c:								 3.440000e+04
+Frequency, f:									 1.000000e+03
+Wave number, k = 2pi/lambda:					 1.826507e-01
+Kappa is in [0,1):								 0.990000
+Volume of the domain that contains all particles:1.000000
+Radius of one particle, a:						 1.000000e-04
+Distance between two particles, d:				 5.000000e-02
+Number of particles, M:							 10000
+Number of sub-cubes in the unit cube, P:		 125
+Direction of plane wave, alpha:					 (1  0  0)
+Continuous distribution function of particles:	 0.91201
+Desired refraction coefficient:					 -1+0.001i
+Original refraction coefficient:				 1
+Boundary impedance of the particles:			 2.6548e-05+0.053096i
+Potential function, p(x):						 3.3361e-08+6.6723e-05i
+Impedance related function, h(x):				 2.9109e-09+5.8219e-06i
+
+Computing...
+
+Solving the reduced system P:
+
+conditionA =
+
+    1.0000
+
+
+normA =
+
+    1.0000
+
+gmres converged at iteration 1 to a solution with relative residual 1.2e-06.
+Elapsed time is 0.677760 seconds.
+
+Solving the original system S:
+
+
+
+
+conditionA =
+
+    1.0002
+
+
+normA =
+
+    1.0001

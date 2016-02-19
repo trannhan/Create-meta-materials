@@ -1,0 +1,3 @@
+ cd ~/local/src/petsc-3.3-p6
+ python2 './configure' '--with-scalar-type=complex' '--with-precision=single' '--with-debugging=no' 
+ make PETSC_DIR=/homes/nhantran/local/src/petsc-3.3-p6 PETSC_ARCH=arch-linux2-c-opt all

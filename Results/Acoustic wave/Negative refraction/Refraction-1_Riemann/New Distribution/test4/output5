@@ -1,0 +1,45 @@
+
+WARNING: Kappa should be in (0,1). Set the default value!
+WARNING: Volume of the domain containing particles should be positive. Set the default value!
+WARNING: Original refraction should not be zero. Set the default value!
+WARNING: Desired refraction should not be zero. Set the default value!
+WARNING: Distribution of particles should be positive. Set the default value!
+----------------------- SOLVING PARTICLE SCATTERING PROBLEM -----------------------
+
+Speed of wave, v:					34400
+Frequency, f:						1000
+Wave number, k:						0.182651
+Direction of plane wave, alpha:				(1, 0, 0)
+Kappa:							0.99
+Volume of the domain that contains all particles, |D|:	1
+Original refraction coefficient, n0:			1+0i
+Desired refraction coefficient, n:			-1+0.001i
+Distribution of particles, N:				0.912011
+Boundary impedance, zeta:				2.65481e-05+0.0530961i
+Radius of one particle, a:				1.000000e-04
+Distance between two neighboring particles, d:		4.000000e-02
+Number of particles, M:					10000 (1.000000e+04)
+Number of sub cubes after partitioning the domain, P:	125
+Total collocation points for solving integral equation:	8000
+
+Solving the original linear system:
+Norm of error:	0.00016592
+Iterations:	1
+
+Solving the reduced linear system:
+Norm of error:	1.32136e-05
+Iterations:	1
+
+Solving the integral equation:
+Norm of error:	0.000220126
+Iterations:	1
+
+Compare solutions:
+(Original system)   vs (Reduced system):	0.0306857
+(Integral equation) vs (Original system):	0.0374431
+(Integral equation) vs (Reduced system):	0.00182738
+(Original system)   vs (Incident field):	1.16368e-05
+
+Started on:	Sat Nov 16 19:51:14 2013
+Finished on:	Sat Nov 16 19:51:18 2013
+Elapsed time:	0:0:4

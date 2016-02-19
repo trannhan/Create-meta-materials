@@ -1,0 +1,7 @@
+How can I determine the condition number of a matrix?
+For small matrices, the condition number can be reliably computed using -pc_type svd -pc_svd_monitor. For larger matrices, you can run with -pc_type none -ksp_type gmres -ksp_monitor_singular_value -ksp_gmres_restart 1000 to get approximations to the condition number of the operator. This will generally be accurate for the largest singular values, but may overestimate the smallest singular value unless the method has converged. Make sure to avoid restarts. To estimate the condition number of the preconditioned operator, use -pc_type somepc in the last command.
+
+
+How can I determine the norm of a matrix?
+-ksp_compute_eigenvalues
+MatNorm
